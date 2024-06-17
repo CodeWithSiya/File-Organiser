@@ -69,7 +69,7 @@ class MovingEventHandler(FileSystemEventHandler):
         :param event: The event that triggered the method.
         :return: None
         """
-        self.move_files()  # Use self to call the method within the class
+        self.move_files()
 
 if __name__ == "__main__":
     """
