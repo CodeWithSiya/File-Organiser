@@ -7,7 +7,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 """
-Unix File Organiser Script.
+Linux File Organiser Script.
 
 This script monitors a specified directory and automatically organizes its files into folders based on their file extensions.
 If a file has no extension, it will be moved to a folder named 'None'.
