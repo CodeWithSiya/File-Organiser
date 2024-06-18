@@ -1,4 +1,4 @@
-# Linux File Organizer Script README
+# Linux File Organiser Script README
 
 ## Overview
 
