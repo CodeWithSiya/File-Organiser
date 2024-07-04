@@ -73,6 +73,7 @@ class MovingEventHandler(FileSystemEventHandler):
 
 if __name__ == "__main__":
     """
+    Organise the existing files in the target directory right after the script is run. 
     Monitor the target directory for changes and move files to their respective folders based on their extensions using the Watchdog API.
     Source: https://pythonhosted.org/watchdog/quickstart.html#a-simple-example
     """
@@ -81,6 +82,7 @@ if __name__ == "__main__":
     event_handler = MovingEventHandler()
     observer = Observer()
     observer.schedule(event_handler, path, recursive=True)
+    event_handler.move_files()
     observer.start()
     try:
         while True:
